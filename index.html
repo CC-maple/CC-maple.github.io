@@ -170,8 +170,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-06-28 09:24:42" itemprop="dateCreated datePublished" datetime="2023-06-28T09:24:42+08:00">2023-06-28</time>
+              <time title="创建时间：2023-06-28 09:24:42 / 修改时间：15:27:42" itemprop="dateCreated datePublished" datetime="2023-06-28T09:24:42+08:00">2023-06-28</time>
             </span>
 
           
@@ -189,30 +190,14 @@
 <p>本文档作为个人学习记录，初次学习，如有疏漏还请指正。</p>
 </blockquote>
 <h1 id="位宽"><a href="#位宽" class="headerlink" title="位宽"></a>位宽</h1><p>数据都有其相应的位宽，在Verilog中用括号定义位宽。</p>
-<h1 id="数制"><a href="#数制" class="headerlink" title="数制"></a>数制</h1><p>在Verilog中要声明数据的进制</p>
-<h1 id="逻辑代数"><a href="#逻辑代数" class="headerlink" title="逻辑代数"></a>逻辑代数</h1><p>研究只用0和1构成的数字系统的数学</p>
-<h2 id="“逻辑与”和“按位与”"><a href="#“逻辑与”和“按位与”" class="headerlink" title="“逻辑与”和“按位与”"></a>“逻辑与”和“按位与”</h2><p><strong>逻辑与 &amp;&amp;</strong></p>
-<p><strong>按位与 &amp;</strong></p>
-<h2 id="“逻辑或”和“按位或”"><a href="#“逻辑或”和“按位或”" class="headerlink" title="“逻辑或”和“按位或”"></a>“逻辑或”和“按位或”</h2><p><strong>逻辑或 ||</strong></p>
-<p><strong>按位或 |</strong></p>
-<h2 id="“逻辑非”和“按位非”"><a href="#“逻辑非”和“按位非”" class="headerlink" title="“逻辑非”和“按位非”"></a>“逻辑非”和“按位非”</h2><p><strong>逻辑非 ！</strong></p>
-<p><strong>按位非 ~</strong></p>
-<h1 id="组合逻辑电路"><a href="#组合逻辑电路" class="headerlink" title="组合逻辑电路"></a>组合逻辑电路</h1><p>电路在任意时刻的输出仅仅取决于<strong>该时刻的输入</strong></p>
-<h2 id="Hello-World！"><a href="#Hello-World！" class="headerlink" title="Hello World！"></a>Hello World！</h2><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//点灯</span></span><br><span class="line"><span class="keyword">assign</span> LED=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">assign</span> LED=<span class="number">4</span>&#x27; b1111; <span class="comment">//(位宽为4，可以同时操控4个LED)</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="时序逻辑电路"><a href="#时序逻辑电路" class="headerlink" title="时序逻辑电路"></a>时序逻辑电路</h1><p><strong>在时钟控制下</strong>运行的电路；</p>
-<p>最常用的是D触发器，尽在时钟信号跳变到来时才接受信号，用于储存数据</p>
-<p>posedge 上升沿</p>
-<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">always</span>@(<span class="keyword">posedge</span> clk)</span><br><span class="line">  led &lt;= !led; <span class="comment">// “&lt;=”相当于赋值符号</span></span><br><span class="line"><span class="keyword">always</span>@(<span class="keyword">posedge</span> clk)</span><br><span class="line">  <span class="keyword">if</span>(enable)</span><br><span class="line">  led &lt;= !led;</span><br><span class="line"><span class="comment">//注意以上两个代码块是并行结构，而不像C那样按顺序执行</span></span><br><span class="line"><span class="comment">//49_999_999 数值之间的下划线会被省略</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="代码学习"><a href="#代码学习" class="headerlink" title="代码学习"></a>代码学习</h1><h2 id="提炼重点"><a href="#提炼重点" class="headerlink" title="提炼重点"></a>提炼重点</h2><p>如何定义一个模块</p>
-<p>输入与输出</p>
-<p>定义变量</p>
-<p>两个always块之间的关系：<strong>并行</strong></p>
-<br/>
-
-<p>改进：8个LED以2hz循环流水灯的方式进行闪烁</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/06/28/%E6%98%9F%E7%81%AB%E7%87%8E%E5%8E%9F-0628/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -245,7 +230,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/06/27/draft_0627/" class="post-title-link" itemprop="url">draft0627</a>
+            <a href="/2023/06/27/draft_0627/" class="post-title-link" itemprop="url">科协公告0627</a>
         </h2>
 
         <div class="post-meta">
@@ -262,7 +247,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-06-28 08:28:17" itemprop="dateModified" datetime="2023-06-28T08:28:17+08:00">2023-06-28</time>
+                <time title="修改时间：2023-06-28 15:30:06" itemprop="dateModified" datetime="2023-06-28T15:30:06+08:00">2023-06-28</time>
               </span>
 
           
@@ -280,11 +265,14 @@
 <p>v1.1</p>
 <p>time: 20230627</p>
 </blockquote>
-<p>【历年真题】<a target="_blank" rel="noopener" href="https://www.123pan.com/s/wEqcVv-esB7H.html">https://www.123pan.com/s/wEqcVv-esB7H.html</a><br>【控制类源码】<a target="_blank" rel="noopener" href="https://www.123pan.com/s/wEqcVv-csB7H.html">https://www.123pan.com/s/wEqcVv-csB7H.html</a><br>【工具软件】<a target="_blank" rel="noopener" href="https://www.123pan.com/s/wEqcVv-CsB7H.html">https://www.123pan.com/s/wEqcVv-CsB7H.html</a><br>【常用模块】<a target="_blank" rel="noopener" href="https://www.123pan.com/s/wEqcVv-7sB7H.html">https://www.123pan.com/s/wEqcVv-7sB7H.html</a><br>【电赛官网】<a target="_blank" rel="noopener" href="https://www.nuedc-training.com.cn/">https://www.nuedc-training.com.cn/</a></p>
-<p>【推荐教程】B站搜”江协电子”</p>
-<p>电赛报名即将开始。对于22级的同学，7月7号~7月21日军训。8月4日便开始电赛，请有意向参加电赛的同学抓紧时间，多来实验室训练。</p>
-<p>现在实验室已开放预约，实验室里有完备的仪器和元器件，可以满足同学们的训练需求，希望同学们合理安排时间。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/06/27/draft_0627/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -329,6 +317,13 @@
 
               <time title="创建时间：2023-06-02 13:00:54" itemprop="dateCreated datePublished" datetime="2023-06-02T13:00:54+08:00">2023-06-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-06-28 15:29:50" itemprop="dateModified" datetime="2023-06-28T15:29:50+08:00">2023-06-28</time>
+              </span>
 
           
 
@@ -342,19 +337,14 @@
 
       
           <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/06/02/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
